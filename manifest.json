@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Unstalker",
+  "version": "0.1",
+
+  "description": "Snooze-add people on Twitter for a week or a month. Sends an e-mail reminder in case you wish to re-follow those worth keeping.",
+
+  "author": "Guilherme Sa",
+  "homepage_url": "http://unstalker.herokuapp.com",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["js/jquery-2.2.1.min.js", "js/content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon_red.png",
+    "default_popup":"html/popup.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "web_accessible_resources": [
+      "images/*",
+      "fonts/*"
+  ],
+  "permissions": [
+      "tabs",
+      "alarms",
+      "storage",
+      "idle"
+  ]
+}

@@ -6,15 +6,23 @@ A handy Chrome extension that snooze-adds people on Twitter for a week or a mont
 
 ![](http://i.imgur.com/tbd.png)
 
-## Features
+## APIs
 
 #### feature 1
 
-* Oauth
+* Oauth: asks for permission to control your Twitter account so that it can follow/unfollow
 
 #### feature 2
 
-* 
+* chrome.alarms: for time logic
+
+#### feature 3
+
+* chrome.storage: for data persistance 
+
+#### feature 4
+
+* chrome.tabs and chrome.idle: at some point Unstalker will want to open a new tab but only when things are idle so that it doesn't interupt the user.
 
 Example:
 

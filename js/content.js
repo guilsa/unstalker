@@ -1,3 +1,6 @@
+// Must be loaded in the manifest file >> matches
+// "js": ["js/jquery-2.2.1.min.js", "js/content.js"]
+
 
 // // var firstHref = $("a[href^='http']").eq(0).attr("href");
 //

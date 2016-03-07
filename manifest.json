@@ -13,16 +13,12 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["js/jquery-2.2.1.min.js", "js/content.js"]
+      "js": ["js/jquery-2.2.1.min.js"]
     }
   ],
   "browser_action": {
     "default_icon": "icon_red.png",
     "default_popup":"html/popup.html"
-  },
-  "background": {
-    "scripts": ["js/background.js"],
-    "page": "html/background.html"
   },
   "web_accessible_resources": [
       "images/*",
@@ -33,5 +29,8 @@
       "alarms",
       "storage",
       "idle"
-  ]
+  ],
+  "externally_connectable": {
+    "matches": ["https://oauth.io/*"]
+  }
 }
